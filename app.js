@@ -26,7 +26,7 @@ app.use(function (req, res, next) {
 
 
 
-// mount routes
+//  mount routes
 app.get('/', function (req, res) { res.redirect('/home') })
 app.get('/home', pages.home)
 app.get('/about', pages.about)

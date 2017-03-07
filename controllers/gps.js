@@ -18,4 +18,5 @@ var processing = function(req, res){
   res.send('welcome' + str.name)
 }
 
+
 exports.processing = processing

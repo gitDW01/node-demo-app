@@ -1,3 +1,4 @@
+"use strict"
 var express = require('express')
   , ejsLocals = require('ejs-locals')
   , app = express()
@@ -6,6 +7,10 @@ var express = require('express')
   , gps = require(__dirname + '/controllers/gps')
   , bodyParser = require('body-parser')
   , jsonParser = bodyParser.json()
+
+
+
+
 // configuration settings
 app.engine('ejs', ejsLocals)
 app.set('views', __dirname + '/views')
@@ -26,7 +31,7 @@ app.get('/', function (req, res) { res.redirect('/home') })
 app.get('/home', pages.home)
 app.get('/about', pages.about)
 
-//POST requests processing
+//POST request processing
 app.post('/gps', jsonParser, gps.processing)
 
 app.use(express.static(__dirname + '/public'))

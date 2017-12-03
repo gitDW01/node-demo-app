@@ -5,7 +5,7 @@ var processing = function(req, res){
   var str = req.body
 
   
-  res.send('welcome' + str)
+  res.send('welcome' + str.Time)
 }
 
 

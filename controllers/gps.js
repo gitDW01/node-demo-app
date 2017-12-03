@@ -6,7 +6,7 @@ var processing = function(req, res){
 
   global.outlol = str.arduino
   
-  res.send('welcome' + str.arduino)
+  res.send('welcome' + ' ' + str.arduino)
 }
 
 

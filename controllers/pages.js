@@ -1,7 +1,7 @@
 var home = function (req, res) {
   res.render('pages/home', {
     title: 'Home page'
-  , message: global.outlol
+  , message: 'Number of cycles' global.outlol
 })
 }
 
